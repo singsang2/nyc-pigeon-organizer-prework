@@ -10,8 +10,8 @@ def nyc_pigeon_organizer(data)
   puts attribute.first.class
   
   names.each do |name|
+    temp_hash = {}
     attribute.each do |attribute|
-      temp_hash = {}
       temp_list = []
       data[attribute].each do |key, info|
         temp_list << key if info.include?(name)
