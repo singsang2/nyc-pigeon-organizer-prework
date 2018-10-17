@@ -11,14 +11,14 @@ def nyc_pigeon_organizer(data)
   
   names.each do |name|
     attribute.each do |attribute|
-      attributes = {}
+      temp_hash = {}
       temp_list = []
       data[attribute].each do |key, info|
         temp_list << key if info.include?(name)
       end
-      attributes[attribute] = temp_list
+      temp_hash[attribute] = temp_list
     end
-    pigeon_list[name] = attributes 
+    pigeon_list[name] = temp_hash 
   end
   puts pigeon_list
   
