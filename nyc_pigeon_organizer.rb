@@ -1,3 +1,42 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  names = []
+  data.values[0].each do |attribute, name|
+    names.push(name)
+  end
+  names = names.flatten.uniq
+  
+  attribute = data.keys
+  
+  names.each do |name|
+    temp = {}
+    attribute.each do |attribute|
+       temp << 
+    end
+    pigeon_list[name] 
+  end
+  puts attribute.class
+  pigeon_list = {}
+  
+  
 end
+
+data = {
+        :color => {
+          :purple => ["Theo", "Peter Jr.", "Lucky"],
+          :grey => ["Theo", "Peter Jr.", "Ms. K"],
+          :white => ["Queenie", "Andrew", "Ms. K", "Alex"],
+          :brown => ["Queenie", "Alex"]
+        },
+        :gender => {
+          :male => ["Alex", "Theo", "Peter Jr.", "Andrew", "Lucky"],
+          :female => ["Queenie", "Ms. K"]
+        },
+        :lives => {
+          "Subway" => ["Theo", "Queenie"],
+          "Central Park" => ["Alex", "Ms. K", "Lucky"],
+          "Library" => ["Peter Jr."],
+          "City Hall" => ["Andrew"]
+        }
+}
+
+nyc_pigeon_organizer(data)
