@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
   
   attribute = data.keys
   pigeon_list = {}
-  puts attribute.first
+  puts attribute.first.class
   
   # names.each do |name|
   #   temp = {}
