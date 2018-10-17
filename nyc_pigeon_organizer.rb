@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
     attribute.each do |attribute|
       temp_list = []
       data[attribute].each do |key, info|
-        temp_list << key if info.include?(name)
+        temp_list << key.to_s if info.include?(name)
       end
       temp_hash[attribute] = temp_list
     end
