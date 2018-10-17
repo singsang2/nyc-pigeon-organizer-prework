@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
     attribute.each do |attribute|
       attributes = {}
       temp_list = []
-      data[attribute] do |key, info|
+      data[attribute].each do |key, info|
         temp_list << key if info.include?(name)
       end
       attributes[attribute] = temp_list
