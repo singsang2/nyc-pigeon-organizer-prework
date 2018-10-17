@@ -9,13 +9,18 @@ def nyc_pigeon_organizer(data)
   pigeon_list = {}
   puts attribute.first.class
   
-  # names.each do |name|
-  #   temp = {}
-  #   attribute.each do |attribute|
-  #     pigeon_list[name] = {attribute 
-  #   end
-  #   pigeon_list[name] = temp 
-  # end
+  names.each do |name|
+    temp = {}
+    attribute.each do |attribute|
+      attribute = {}
+      data[attribute] do |key, info|
+        attribute << key if info.include?(name)
+      end
+      pigeon_list[name] =
+         
+    end
+    pigeon_list[name] = temp 
+  end
   puts pigeon_list
   
   
