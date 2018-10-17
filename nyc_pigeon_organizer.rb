@@ -9,10 +9,10 @@ def nyc_pigeon_organizer(data)
   
   names.each do |name|
     temp = {}
-    attribute.each do |attribute|
-       temp << 
-    end
-    pigeon_list[name] 
+    # attribute.each do |attribute|
+    #   temp << 
+    # end
+    pigeon_list[name] = temp 
   end
   puts attribute.class
   pigeon_list = {}
