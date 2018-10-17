@@ -6,6 +6,7 @@ def nyc_pigeon_organizer(data)
   names = names.flatten.uniq
   
   attribute = data.keys
+  pigeon_list = {}
   
   names.each do |name|
     temp = {}
@@ -14,8 +15,8 @@ def nyc_pigeon_organizer(data)
     # end
     pigeon_list[name] = temp 
   end
-  puts attribute.class
-  pigeon_list = {}
+  puts pigeon_list
+  
   
   
 end
